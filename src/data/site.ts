@@ -7,7 +7,9 @@ export const siteConfig = {
   title: "Tobias Moreno | Desarrollo Web",
   description:
     "Desarrollo páginas web modernas para negocios, emprendimientos y profesionales. Diseño responsive, WhatsApp, catálogos y soluciones personalizadas.",
-  url: "https://DOMINIO_PLACEHOLDER.com",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://YOUR-FIREBASE-PROJECT.web.app",
   location: "Córdoba, Argentina",
   whatsapp: "5493512552929",
   email: "tobiasmoreno.tm.21@gmail.com",

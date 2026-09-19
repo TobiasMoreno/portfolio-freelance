@@ -5,8 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint ."
+    "start": "npx --yes --package=firebase-tools@15.30.2 firebase emulators:start --only hosting",
+    "lint": "eslint .",
+    "firebase:login": "npx --yes --package=firebase-tools@15.30.2 firebase login",
+    "firebase:use": "npx --yes --package=firebase-tools@15.30.2 firebase use --add",
+    "preview:firebase": "npm run build && npx --yes --package=firebase-tools@15.30.2 firebase emulators:start --only hosting",
+    "deploy:firebase": "npm run build && npx --yes --package=firebase-tools@15.30.2 firebase deploy --only hosting"
   },
   "dependencies": {
     "next": "16.3.5",
