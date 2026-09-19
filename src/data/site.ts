@@ -15,6 +15,7 @@ export const siteConfig = {
   email: "tobiasmoreno.tm.21@gmail.com",
   linkedin: "https://www.linkedin.com/in/tobiasmoreno/",
   github: "https://github.com/TobiasMoreno",
+  formspreeEndpoint: "https://formspree.io/f/myezkkkg",
   whatsappMessage:
     "Hola Tobias! Estuve viendo tu portfolio y quería consultarte por una página web para mi negocio.",
 } as const;
@@ -27,7 +28,7 @@ export const navigation = [
   { label: "Contacto", href: "#contacto" },
 ] as const;
 
-export function getWhatsAppUrl(message = siteConfig.whatsappMessage) {
+export function getWhatsAppUrl(message: string = siteConfig.whatsappMessage) {
   return `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(message)}`;
 }
 

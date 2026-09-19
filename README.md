@@ -13,7 +13,7 @@ Abrí [http://localhost:3000](http://localhost:3000). Para comprobar la versión
 
 ## Antes de publicar
 
-1. **Datos y enlaces:** editá `src/data/site.ts`. Reemplazá el WhatsApp (código de país y área, sin `+`, espacios ni guiones), email, LinkedIn, GitHub y dominio.
+1. **Datos y enlaces:** editá `src/data/site.ts`. Reemplazá el WhatsApp (código de país y área, sin `+`, espacios ni guiones), email, LinkedIn, GitHub, dominio y endpoint de Formspree si fuera necesario.
 2. **Proyectos:** editá `src/data/projects.ts`. Del Castelar y Pupila ya están cargados. Para sumar otro proyecto, agregá un nuevo objeto al array `projects`.
 3. **Screenshots:** si querés actualizar las capturas, reemplazá sin cambiar el nombre:
    - `public/projects/project-01/desktop.webp` y `mobile.webp`
